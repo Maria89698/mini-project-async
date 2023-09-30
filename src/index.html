@@ -1,14 +1,20 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="./index.js"></script>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <button id="js-creater" type="button">Create template</button>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Блог</h1>
+    <form id="createPostForm">
+        <input type="text" id="titleInput" placeholder="Заголовок" required>
+        <textarea id="contentInput" placeholder="Зміст" required></textarea>
+        <button type="submit">Створити пост</button>
+    </form>
+    <div id="postsContainer"></div>
+
+<script type="module" src="./js/index.js"></script>
+</body>
 </html>
