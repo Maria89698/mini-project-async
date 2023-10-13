@@ -1,7 +1,15 @@
 // Створення нового поста
+import axios from "axios";
 
-async function createPost(title, content) {
+const BASE_URL = 'http://localhost:3000/posts';
+
+async function createPost(title, text) {
     try {
+        const newPost = await axios.post(BASE_URL, {
+            title,
+            text
+        })
+        return newPost
     } catch (error) {
         console.error(error);
     }

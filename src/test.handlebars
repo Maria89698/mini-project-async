@@ -7,7 +7,11 @@
     <div class="commentsContainer" data-id="">
         <h3>Коментарі:</h3>
         <ul>
-            <li></li>
+            {{#each comments}}
+            <li>
+                {{this.comments}}
+            </li>
+            {{/each}}
         </ul>
         <form class="createCommentForm">
             <input type="text" class="commentInput" placeholder="Новий коментар" required>

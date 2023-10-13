@@ -19,6 +19,7 @@
     "url": "https://github.com/Maria89698/mini-project-async/issues"
   },
   "dependencies": {
+    "axios": "^1.5.1",
     "json-server": "^0.17.4",
     "modern-normalize": "^1.1.0",
     "parcel-transformer-hbs": "^1.0.4"
